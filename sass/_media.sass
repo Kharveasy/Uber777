@@ -98,7 +98,9 @@
                 padding-right: 0
                 border: none
                 margin: 10px 0
-            &_link        
+            &_link   
+                display: block
+                width: 100%     
                 font-size: 20px
         .hamburger
             display: block
@@ -144,9 +146,17 @@
             height: 40px
             margin: 0 auto
             margin-top: 10px
+            &:hover
+                background-image: linear-gradient(to top, $blue-color 0%, #4ce2ff 100%)
+                
     .promo
         &_header
             line-height: 45px
+        &_btn
+            &:hover
+                background-image: linear-gradient(to top, $blue-color 0%, #4ce2ff 100%)
+                    
+            
     .reasons
         &_descr
             width: 100%
@@ -165,6 +175,10 @@
             &_subtitle
                 padding-top: 40%
                 font-size: 18px
+            &_plus
+                &:hover
+                    &:before, &:after
+                        background-color: $blue-color
     .choise
         background: #070716
         padding: 24px 0 30px
@@ -182,6 +196,9 @@
                 max-width: 100%
     .cities
         min-height: 360px
+        .link
+            &:hover
+                color: $blue-color           
     footer
         .footer
             &_divider
@@ -203,8 +220,25 @@
                 flex-wrap: nowrap
                 justify-content: center
                 margin-top: 20px
+                &_item
+                    &:hover
+                        background-color: #070716
+                        
             &_links
                 width: 100%
+                &_main
+                    a
+                        &:hover
+                            color: #070716
+                &_sub
+                    a
+                        &:hover
+                            color: #999999
+                &_lang
+                    a
+                        &:hover
+                            color: #1fbad6                           
+                            
             &_mobile
                 width: 100%
                 display: flex

@@ -11,6 +11,23 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <script src="https://kit.fontawesome.com/74830edbda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -19,9 +36,9 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
+                    <li class="menu_item"><a href="#auto" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#auto" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
@@ -281,7 +298,7 @@
     <section class="require">
         <div class="container">
             <div class="label">возможности</div>
-            <div class="title">условия и требования</div>
+            <div class="title" id="auto">условия и требования</div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="require_block">
@@ -298,9 +315,10 @@
                             </li>
                         </ul>
                         <div class="require_subtitle">В день заработок составляет 7000-12000р + бонус 3000т <br> рублей
-                        </div>
+                        </div>                        
                     </div>
                 </div>
+                
                 <div class="col-md-6">
                     <div class="require_block">
                         <div class="require_title">УСЛОВИЯ: на авто компании:</div>
@@ -310,6 +328,7 @@
                             <li class="require_list_item">Среда пятница и суббота работа на компанию остальные дни вы
                                 работаете на себя</li>
                         </ul>
+                        <div id="require"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
